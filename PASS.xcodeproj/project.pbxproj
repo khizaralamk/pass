@@ -6,34 +6,112 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7DD15251C0EBD7337F59D808 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 60727F6835B25FA611FA3E16 /* Supabase */; };
+		B180800FAF983456DE7F1BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1519D7B1780A8FB580858B /* Foundation.framework */; };
+		DEFB1F6DDFBBBEF58276EB44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1519D7B1780A8FB580858B /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E9BDD29DF81085F381FCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C979DB3079495200B286CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5C979E23079495200B286CD;
+			remoteInfo = PASS;
+		};
+		F80671D26B61CE5D55DA3250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C979DB3079495200B286CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5C979E23079495200B286CD;
+			remoteInfo = PASS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0F1519D7B1780A8FB580858B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2C4908829F6F2EA4833D2930 /* PASSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PASSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E462C45F88061CD98E0965 /* PASSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PASSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C979E33079495200B286CD /* PASS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PASS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9BB85EB2F063D35435480FF1 /* PASSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = PASSUITests;
+			sourceTree = "<group>";
+		};
+		CF8518CBEF45717CEC894A46 /* PASSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = PASSTests;
+			sourceTree = "<group>";
+		};
 		E5C979E53079495200B286CD /* PASS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PASS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B46957BDFD9FDEFA15C34233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFB1F6DDFBBBEF58276EB44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D737FE21124B3C3D8BA743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B180800FAF983456DE7F1BC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5C979E03079495200B286CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD15251C0EBD7337F59D808 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10486322BF8E0BC0EFB4EAAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C35CA6CB68D7F0864550F6D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C35CA6CB68D7F0864550F6D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0F1519D7B1780A8FB580858B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		E5C979DA3079495200B286CD = {
 			isa = PBXGroup;
 			children = (
 				E5C979E53079495200B286CD /* PASS */,
 				E5C979E43079495200B286CD /* Products */,
+				10486322BF8E0BC0EFB4EAAF /* Frameworks */,
+				CF8518CBEF45717CEC894A46 /* PASSTests */,
+				9BB85EB2F063D35435480FF1 /* PASSUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				E5C979E33079495200B286CD /* PASS.app */,
+				2C4908829F6F2EA4833D2930 /* PASSTests.xctest */,
+				56E462C45F88061CD98E0965 /* PASSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +128,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2913337E1EA881749770DA79 /* PASSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4010FD558A35BF7CEB08C8 /* Build configuration list for PBXNativeTarget "PASSUITests" */;
+			buildPhases = (
+				7C71B4F609BC3731C3DBC651 /* Sources */,
+				D0D737FE21124B3C3D8BA743 /* Frameworks */,
+				06B64EE729F4444E583DCEEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91775EDDB44EAF3854914ED3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BB85EB2F063D35435480FF1 /* PASSUITests */,
+			);
+			name = PASSUITests;
+			productName = PASSUITests;
+			productReference = 56E462C45F88061CD98E0965 /* PASSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		830A88EAF20063F88E1DEFB3 /* PASSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FEA7E173D4B876BE2FCF2D /* Build configuration list for PBXNativeTarget "PASSTests" */;
+			buildPhases = (
+				F4BF24181328368681508FFD /* Sources */,
+				B46957BDFD9FDEFA15C34233 /* Frameworks */,
+				2218EB5B732832F1F2476952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F723504DC075CA3884721F1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CF8518CBEF45717CEC894A46 /* PASSTests */,
+			);
+			name = PASSTests;
+			productName = PASSTests;
+			productReference = 2C4908829F6F2EA4833D2930 /* PASSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E5C979E23079495200B286CD /* PASS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C979F03079495400B286CD /* Build configuration list for PBXNativeTarget "PASS" */;
@@ -65,6 +187,7 @@
 			);
 			name = PASS;
 			packageProductDependencies = (
+				60727F6835B25FA611FA3E16 /* Supabase */,
 			);
 			productName = PASS;
 			productReference = E5C979E33079495200B286CD /* PASS.app */;
@@ -80,6 +203,12 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					2913337E1EA881749770DA79 = {
+						TestTargetID = E5C979E23079495200B286CD;
+					};
+					830A88EAF20063F88E1DEFB3 = {
+						TestTargetID = E5C979E23079495200B286CD;
+					};
 					E5C979E23079495200B286CD = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -94,17 +223,36 @@
 			);
 			mainGroup = E5C979DA3079495200B286CD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				780486799CEE21E7D7E6E10C /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E5C979E43079495200B286CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E5C979E23079495200B286CD /* PASS */,
+				830A88EAF20063F88E1DEFB3 /* PASSTests */,
+				2913337E1EA881749770DA79 /* PASSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		06B64EE729F4444E583DCEEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2218EB5B732832F1F2476952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5C979E13079495200B286CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,7 +263,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C71B4F609BC3731C3DBC651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5C979DF3079495200B286CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BF24181328368681508FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,7 +286,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5F723504DC075CA3884721F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PASS;
+			target = E5C979E23079495200B286CD /* PASS */;
+			targetProxy = F80671D26B61CE5D55DA3250 /* PBXContainerItemProxy */;
+		};
+		91775EDDB44EAF3854914ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PASS;
+			target = E5C979E23079495200B286CD /* PASS */;
+			targetProxy = 48E9BDD29DF81085F381FCB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		075C372B804365512EC99134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6AR2W6J5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luis.PASSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PASS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PASS";
+			};
+			name = Debug;
+		};
+		3FD366B72C7405C31F876CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6AR2W6J5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luis.PASSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PASS;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6912261582AFF2A755DC3150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6AR2W6J5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luis.PASSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PASS;
+			};
+			name = Debug;
+		};
+		CC10F15E612296AD5C1AB161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6AR2W6J5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luis.PASSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PASS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PASS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E5C979EE3079495400B286CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -178,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -236,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -251,16 +540,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/PASS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6AR2W6J5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PASS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "PASS uses the camera to capture your photo or 4-second video for a Relay.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "PASS records audio with your Relay video.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PASS saves your finished Reveal video to your Photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -274,7 +571,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,16 +580,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/PASS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6AR2W6J5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PASS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "PASS uses the camera to capture your photo or 4-second video for a Relay.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "PASS records audio with your Relay video.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "PASS saves your finished Reveal video to your Photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,13 +611,31 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F4010FD558A35BF7CEB08C8 /* Build configuration list for PBXNativeTarget "PASSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD366B72C7405C31F876CFD /* Release */,
+				6912261582AFF2A755DC3150 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76FEA7E173D4B876BE2FCF2D /* Build configuration list for PBXNativeTarget "PASSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC10F15E612296AD5C1AB161 /* Release */,
+				075C372B804365512EC99134 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5C979DE3079495200B286CD /* Build configuration list for PBXProject "PASS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -332,6 +655,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		780486799CEE21E7D7E6E10C /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60727F6835B25FA611FA3E16 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 780486799CEE21E7D7E6E10C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5C979DB3079495200B286CD /* Project object */;
 }

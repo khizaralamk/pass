@@ -1,0 +1,17 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcscmblueprint
+*.moved-aside
+.swiftpm/
+# Secrets (backend phase): never commit real values
+Config/Secrets*.xcconfig
+!Config/Secrets.example.xcconfig
+*.p8
+*.p12
+*.mobileprovision
+GoogleService-Info.plist
+# macOS
+.DS_Store

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Outfit-Variable.ttf</string>
+		<string>Inter-Variable.ttf</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.luis.PASS</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>pass</string>
+			</array>
+		</dict>
+	</array>
+	<key>PASS_SUPABASE_URL</key>
+	<string>$(PASS_SUPABASE_URL)</string>
+	<key>PASS_SUPABASE_ANON_KEY</key>
+	<string>$(PASS_SUPABASE_ANON_KEY)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>

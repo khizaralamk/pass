@@ -1,0 +1,8 @@
+// Backend selection for the PASS app. Empty values keep the in-app mock backend.
+// Real values belong in Config/Secrets.xcconfig (gitignored; see Secrets.example.xcconfig), which overrides these.
+// xcconfig treats `//` as a comment: write URLs as https:/$()/<ref>.supabase.co or omit the scheme (the app adds https://).
+
+PASS_SUPABASE_URL =
+PASS_SUPABASE_ANON_KEY =
+
+#include? "Secrets.xcconfig"

@@ -1,0 +1,4 @@
+Outfit (Copyright 2021 The Outfit Project Authors, https://github.com/Outfitio/Outfit-Fonts)
+Inter (Copyright 2016 The Inter Project Authors, https://github.com/rsms/inter)
+Both fonts are licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
+Files: Outfit-Variable.ttf = Outfit[wght].ttf, Inter-Variable.ttf = Inter[opsz,wght].ttf (from github.com/google/fonts).
