@@ -1,7 +1,7 @@
 # PASS iOS (frontend phase)
 
 Native SwiftUI app. Open `PASS.xcodeproj` in Xcode 26.2+, select the **PASS** scheme, run on any iPhone simulator
-(iOS 17+) or a device. No packages, no credentials, no setup.
+(iOS 17+) or a device. One Swift package (supabase-swift, fetched automatically), no credentials, no setup.
 
 - First launch: Splash → **Try the demo** (simulator) or **Continue with Apple** (device) → onboarding → Home.
 - To jump straight to Home with demo data: Edit Scheme → Arguments → `-demoSession -resetState`.
