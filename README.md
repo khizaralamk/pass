@@ -41,7 +41,7 @@ Full list: [`Documentation/05-KNOWN-LIMITATIONS.md`](Documentation/05-KNOWN-LIMI
    cd pass
    ```
 2. Open **`PASS.xcodeproj`** in Xcode. On first open, Xcode fetches the one Swift package (`supabase-swift`). Wait for it to finish.
-3. At the top of Xcode, choose the **PASS** scheme and an iPhone simulator (for example **iPhone 17 Pro Max**).
+3. At the top of Xcode, choose the **PASS** scheme and an iPhone simulator (for example **iPhone 17 Pro**, or any iPhone simulator you have).
 4. Press **▶ Run** (`⌘R`).
 5. In the app: **Splash → Try the demo → onboarding → Home**.
 
@@ -74,11 +74,11 @@ From the terminal:
 ```bash
 # Unit tests: game rules, validators, Reveal timeline, deep links, mock store
 xcodebuild -project PASS.xcodeproj -scheme PASS \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' test -only-testing:PASSTests
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' test -only-testing:PASSTests
 
 # UI journeys
 xcodebuild -project PASS.xcodeproj -scheme PASS \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' test -only-testing:PASSUITests
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' test -only-testing:PASSUITests
 ```
 
 ---
